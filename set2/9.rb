@@ -1,3 +1,6 @@
+# Implement PKCS#7 padding. "YELLOW SUBMARINE" padded to 20 should
+# give "YELLOW SUBMARINE\0x04\0x04\0x04\0x04"
+
 class Pkcs7
     # pad an individual block
     def self.pad_block(block, block_size)
