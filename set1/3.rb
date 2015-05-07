@@ -4,10 +4,6 @@ def hex_to_ascii(hex_string)
     [hex_string].pack('H*')
 end
 
-def hex_to_base64(hex_string)
-    [[hex_string].pack('H*')].pack('m0')
-end
-
 def char_to_hex(char)
     char.unpack('H*').first
 end

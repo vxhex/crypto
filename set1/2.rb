@@ -1,8 +1,4 @@
 
-def hex_to_base64(hex_string)
-    [[hex_string].pack('H*')].pack('m0')
-end
-
 def xor(h1, h2)
     (h1.to_i(16) ^ h2.to_i(16)).to_s(16)
 end
